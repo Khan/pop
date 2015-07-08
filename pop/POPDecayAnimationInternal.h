@@ -9,6 +9,7 @@
 
 #import "POPDecayAnimation.h"
 #import "POPPropertyAnimationInternal.h"
+#import <cmath>
 
 // minimal velocity factor before decay animation is considered complete, in units / s
 static CGFloat kPOPAnimationDecayMinimalVelocityFactor = 5.;
@@ -58,7 +59,7 @@ struct _POPDecayAnimationState : _POPPropertyAnimationState
     CGFloat f = dynamicsThreshold * kPOPAnimationDecayMinimalVelocityFactor;
     const CGFloat *velocityValues = vec_data(velocityVec);
     for (NSUInteger idx = 0; idx < valueCount; idx++) {
-      if (fabsf(velocityValues[idx]) >= f)
+	  if (std::abs(velocityValues[idx]) >= f)
         return false;
     }
     return true;
