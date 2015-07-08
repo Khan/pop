@@ -823,7 +823,7 @@
 			name = "pop-tests-osx";
 			productName = "pop-tests-osx";
 			productReference = EC7E319918C93D6500B38170 /* pop-tests-osx.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		ECF01ED218C92B7F009E0AD1 /* pop-tests */ = {
 			isa = PBXNativeTarget;
@@ -843,7 +843,7 @@
 			name = "pop-tests";
 			productName = "pop-tests";
 			productReference = ECF01ED318C92B7F009E0AD1 /* pop-tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -852,7 +852,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					EC7E319818C93D6500B38170 = {
@@ -1110,6 +1110,7 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 			};
@@ -1132,6 +1133,7 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 			};
@@ -1154,6 +1156,7 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1166,6 +1169,7 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 			};
